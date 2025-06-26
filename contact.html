@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Χρήστος Πάνος | Επικοινωνία</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 id="name-header">Χρήστος Πάνος</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="menu-about">About Me</a></li>
+                    <li><a href="cv.html" id="menu-cv">Βιογραφικό</a></li>
+                    <li><a href="contact.html" class="active" id="menu-contact">Επικοινωνία</a></li>
+                </ul>
+            </nav>
+            <button id="language-toggle">EN</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="contact-section">
+            <h2 id="contact-title">Επικοινωνία</h2>
+            
+            <div class="contact-info">
+                <h3 id="contact-info-title">Στοιχεία Επικοινωνίας</h3>
+                <p><strong id="email-label">Email:</strong> christos.panos17@gmail.com</p>
+                <p><strong id="phone-label">Τηλέφωνο:</strong> +30 694 507 4820</p>
+                <p><strong id="location-label">Τοποθεσία:</strong> </p> 
+                <h id="location-label1">Θεσσαλονίκη, Ελλάδα</h>
+                
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/MASCARI1914" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/__xristoss__/?hl=el" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100007373491137" target="_blank"><i class="fab fa-facebook"></i> </a>
+                    
+                </div>
+            </div>
+            
+           <form id="contact-form" action="https://formsubmit.co/christos.panos17@gmail.com" method="POST">
+    <!-- Hidden fields for FormSubmit -->
+    <input type="hidden" name="_subject" value="Νέο μήνυμα από την ιστοσελίδα">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> <!-- Προαιρετικό -->
+    
+    <h3 id="form-title">Στείλτε μου μήνυμα</h3>
+    
+    <div class="form-group">
+        <label for="name" id="name-label">Όνομα:</label>
+        <input type="text" id="name" name="name" required minlength="2">
+        <span class="error-message" id="name-error"></span>
+    </div>
+    
+    <div class="form-group">
+        <label for="email" id="email-form-label">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error-message" id="email-error"></span>
+    </div>
+    
+    <div class="form-group">
+        <label for="subject" id="subject-label">Θέμα:</label>
+        <input type="text" id="subject" name="subject" required minlength="5">
+        <span class="error-message" id="subject-error"></span>
+    </div>
+    
+    <div class="form-group">
+        <label for="message" id="message-label">Μήνυμα:</label>
+        <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+        <span class="error-message" id="message-error"></span>
+    </div>
+    
+    <button type="submit" id="submit-btn">Αποστολή</button>
+</form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p id="footer-text">&copy; 2023 Χρήστος Πάνος. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
