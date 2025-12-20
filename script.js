@@ -196,12 +196,13 @@ if (contactForm) {
 
 document.getElementById('download-cv').addEventListener('click', function(e) {
     // Πρόσθεσε timestamp για να αποφύγεις cache
-    this.href = 'ChristosPanos.pdf?t=' + new Date().getTime();
+    this.href = 'ChristosPanos_CV.pdf?t=' + new Date().getTime();
     
     // Επιπλέον, βάζουμε download attribute αν λείπει
     if (!this.hasAttribute('download')) {
-        this.setAttribute('download', 'CV_Christos_Panos');
+        this.setAttribute('download', 'ChristosPanos_CV');
     }
 });
     
+
 
